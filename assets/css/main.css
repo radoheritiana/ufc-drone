@@ -34,6 +34,11 @@ header {
     flex-wrap: wrap;
     align-items: center;
     padding: 2em 6em;
+    transition: all 0.3s ease;
+}
+
+.scroll {
+    background-color: rgb(154, 211, 253);
 }
 
 header nav {
