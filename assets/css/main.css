@@ -1,0 +1,273 @@
+:root {
+    --white-color: #f8f8f8;
+    --black-color: #151515;
+    --black-color-variante: #4e4e4e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/** header **/
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2em 6em;
+}
+
+header nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    font-weight: 700;
+}
+.nav-link {
+    text-decoration: none;
+    color: var(--white-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--black-color);
+}
+
+.nav-button {
+    text-decoration: none;
+    color: var(--black-color);
+    border-radius: 25px;
+    width: 8em;
+    height: 3em;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-login {
+    background-color: var(--white-color);
+    border: none;
+}
+
+.btn-login:hover {
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.btn-signup {
+    border: 2px solid var(--white-color);
+    background-color: transparent;
+}
+
+.btn-signup:hover {
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border: none;
+}
+
+.logo {
+    color: #f8f8f8;
+}
+
+/** end header **/
+
+/* hero */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(189, 169, 251), rgb(154, 211, 253)),
+    linear-gradient(to bottom, rgb(250, 170, 194), rgb(250, 236, 195));
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 6em ;
+    color: var(--white-color);
+}
+
+.left-content {
+    padding-top: 4em;
+}
+
+.left-content h3 {
+    font-size: 4.5em;
+}
+.left-content p {
+    font-size: 1.1em;
+    margin: 2em 0;
+}
+
+.hero-btn-content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.hero-button {
+    border: none;
+    padding: 1em 1.8em;
+    border-radius: 25px;
+    font-weight: 600;
+    color: var(--black-color);
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.hero-link {
+    color: var(--white-color);
+    font-size: 1.2em;
+}
+.right-content {
+    width: 94%;
+    height: auto;
+    margin: auto;
+}
+
+/* end hero */
+
+/** partenaire */
+.partenaire {
+    background: linear-gradient(to bottom, rgb(154, 211, 253), #fff 70%);
+    padding: 0 3em;
+}
+.division {
+    height: 2px;
+    background-color: #78787838;
+    width: 100%;
+}
+
+.partenaire-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4em 0;
+}
+
+.partenaire-list h3 {
+    font-size: 2em;
+}
+
+/** end partenaire */
+/* how-it-works */
+.section {
+    padding: 6em;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5em;
+    padding-bottom: 0.4em;
+    font-weight: 500;
+}
+
+.sub-title {
+    color: var(--black-color-variante);
+}
+
+.works-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.works-list-item {
+    padding: 2em;
+}
+
+.works-list-item h3 {
+    margin: 1em 0;
+}
+
+.works-list-item p {
+    color: var(--black-color-variante);
+}
+
+/* end how-it-works */
+
+
+
+/** footer */
+
+footer {
+    background-color: #351e39;
+    color: var(--white-color);
+    padding: 3em 6em;
+}
+.footer-row {
+    padding: 1em 0;
+}
+
+.fotter-row-grid {
+    display: grid;
+    grid-template-columns: 15% 15% 25% 45%;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin: 0.4em 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+.footer-row:last-child {
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 20px;
+}
+
+.footer-contact {
+    border: 2px solid var(--black-color-variante);
+    padding: 1em;
+    border-radius: 15px;
+}
+.footer-contact:last-child {
+    margin-top: 2em;
+}
+/** end footer */
