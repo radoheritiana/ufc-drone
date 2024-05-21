@@ -220,6 +220,61 @@ header nav ul {
     color: var(--black-color-variante);
 }
 
+.first-works {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 6em 0;
+    text-align: left
+}
+
+.first-works h1 {
+    font-size: 3em;
+    font-weight: 600;
+}
+.first-works p {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+.image-square {
+    position: relative;
+    width: 96%;
+    height: 96%;
+    margin: auto;
+    z-index: 5;
+    border-radius: 25px;
+}
+
+.works-text-content {
+    padding-right: 2em;
+}
+
+.first-works a {
+    color: rgb(234, 0, 255);
+    font-size: 1.3em;
+}
+
+.square1 {
+    position: absolute;
+    width: 6em;
+    height: 6em;
+    border-radius: 25px;
+    background-color: rgb(234, 0, 255);
+    z-index: 0;
+    transform: translateX(-20px) translateY(-20px);
+}
+.square2 {
+    position: absolute;
+    right: 6em;
+    width: 8em;
+    height: 8em;
+    border-radius: 25px;
+    background-color: rgb(234, 0, 255);
+    z-index: 0;
+    transform: translateY(calc(100% + 20px));
+}
+
 /* end how-it-works */
 
 
