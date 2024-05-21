@@ -5,3 +5,9 @@ window.onscroll = function() {
         document.getElementById("header").classList.remove('scroll');
     }
 }
+
+window.onload = function() {
+    setTimeout(function(){
+        document.getElementById('loading').classList.add("hidden");
+    }, 3000);
+}
