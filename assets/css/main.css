@@ -184,8 +184,9 @@ header nav ul {
     padding: 4em 0;
 }
 
-.partenaire-list h3 {
+.partenaire-list img {
     font-size: 2em;
+    width: 200px;
 }
 
 /** end partenaire */
@@ -215,6 +216,10 @@ header nav ul {
 
 .works-list-item {
     padding: 2em;
+}
+
+.works-list-item img {
+    width: 120px;
 }
 
 .works-list-item h3 {
